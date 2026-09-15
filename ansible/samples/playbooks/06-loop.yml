@@ -1,0 +1,11 @@
+---
+- name: Loop Execution
+  hosts: all
+
+  tasks:
+    - name: Display counter
+      ansible.builtin.debug:
+        msg: "Counter: {{ item }}"
+      loop:
+        - 1
+        - 2

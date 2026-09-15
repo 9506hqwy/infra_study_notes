@@ -1,0 +1,16 @@
+---
+- name: Task Status
+  hosts: all
+
+  tasks:
+    - name: Check Status
+      ansible.builtin.shell:
+        cmd: exit 1
+      register: result
+      failed_when: result.rc == 0
+
+    - name: Check Status
+      ansible.builtin.shell:
+        cmd: exit 0
+      register: result
+      changed_when: result.rc != 0

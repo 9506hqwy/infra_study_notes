@@ -24,6 +24,7 @@ exclude_patterns = [
     '.venv',
     '.vscode',
     '_build',
+    'ansible/.venv',
 ]
 
 language = 'ja'

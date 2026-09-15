@@ -1,0 +1,7 @@
+---
+- name: Minimal Ansible Playbook
+  hosts: all
+
+  tasks:
+    - name: Ping the host
+      ansible.builtin.ping:

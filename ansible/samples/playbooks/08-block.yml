@@ -1,0 +1,12 @@
+---
+- name: Group Tasks
+  hosts: all
+
+  tasks:
+    - name: Group Task
+      block:
+        - name: Ping the host
+          ansible.builtin.ping:
+
+        - name: Ping the host
+          ansible.builtin.ping:

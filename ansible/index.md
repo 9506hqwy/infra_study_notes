@@ -33,10 +33,14 @@ setuptools          53.0.0
 typing_extensions   4.16.0
 ```
 
+## 実行
+
 ```{toctree}
 ./inventory.md
+./playbook.md
 ```
 
 ## 参考
 
 - [Ansible community documentation](https://docs.ansible.com/)
+- [Jinja](https://jinja.palletsprojects.com/en/stable/)

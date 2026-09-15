@@ -1,0 +1,10 @@
+---
+- name: Install Software
+  hosts: all
+
+  tasks:
+    - name: Install HTTP server
+      ansible.builtin.dnf:
+        name: httpd
+        state: present
+      become: yes

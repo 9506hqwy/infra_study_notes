@@ -1,0 +1,15 @@
+---
+- name: Until Execution
+  hosts: all
+
+  tasks:
+    - name: Display counter
+      ansible.builtin.command:
+        cmd: "/usr/bin/{{ item }}"
+      register: result
+      loop:
+        - 'false'
+        - 'true'
+      until: result is succeeded
+      retries: 2
+      delay: 1

@@ -1,0 +1,24 @@
+---
+- name: Use Task Result
+  hosts: all
+
+  tasks:
+    - name: Always failed
+      ansible.builtin.command:
+        cmd: /usr/bin/false
+      ignore_errors: True
+      register: result
+
+    - name: Display the result
+      ansible.builtin.debug:
+        var: result
+
+    - name: Always succeeded
+      ansible.builtin.command:
+        cmd: /usr/bin/true
+      register: result
+      when: result is failed
+
+    - name: Display the result
+      ansible.builtin.debug:
+        var: result
