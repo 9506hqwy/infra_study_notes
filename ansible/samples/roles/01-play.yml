@@ -1,0 +1,5 @@
+---
+- name: Minimal Ansible Playbook
+  hosts: all
+  roles:
+    - 01-role

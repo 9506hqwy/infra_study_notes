@@ -1,0 +1,12 @@
+---
+- name: Minimal Ansible Playbook
+  hosts: all
+
+  tasks:
+    - name: Static Role Import
+      ansible.builtin.import_role:
+        name: 01-role
+
+    - name: Dynamic Role Include
+      ansible.builtin.include_role:
+        name: 01-role

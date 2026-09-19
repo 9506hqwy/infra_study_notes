@@ -38,6 +38,7 @@ typing_extensions   4.16.0
 ```{toctree}
 ./inventory.md
 ./playbook.md
+./role.md
 ```
 
 ## 参考
