@@ -1,0 +1,7 @@
+---
+- name: Minimal Ansible Playbook
+  hosts: all
+  collections:
+    - local.collection_01
+  roles:
+    - 01-role

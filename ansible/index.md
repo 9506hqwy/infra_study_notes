@@ -39,9 +39,12 @@ typing_extensions   4.16.0
 ./inventory.md
 ./playbook.md
 ./role.md
+./collection.md
 ```
 
 ## 参考
 
 - [Ansible community documentation](https://docs.ansible.com/)
+  - [Indexes of all modules and plugins](https://docs.ansible.com/projects/ansible/latest/collections/all_plugins.html)
+  - [Collection Index](https://docs.ansible.com/projects/ansible/latest/collections/index.html)
 - [Jinja](https://jinja.palletsprojects.com/en/stable/)
