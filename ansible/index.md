@@ -41,6 +41,7 @@ typing_extensions   4.16.0
 ./role.md
 ./collection.md
 ./plugin.md
+./module.md
 ```
 
 ## 参考

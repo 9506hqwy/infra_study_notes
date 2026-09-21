@@ -1,0 +1,13 @@
+---
+- name: Minimal Ansible Playbook
+  hosts: all
+
+  tasks:
+    - name: Echo a message
+      echo:
+        msg: "Hello, World! "
+      register: result
+
+    - name: Display the result
+      ansible.builtin.debug:
+        var: result
