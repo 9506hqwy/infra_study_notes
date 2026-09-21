@@ -40,6 +40,7 @@ typing_extensions   4.16.0
 ./playbook.md
 ./role.md
 ./collection.md
+./plugin.md
 ```
 
 ## 参考
