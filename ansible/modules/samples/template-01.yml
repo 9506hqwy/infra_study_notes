@@ -1,0 +1,12 @@
+---
+- name: template 01
+  hosts: all
+
+  vars:
+    var_name: "World"
+
+  tasks:
+    - name: Create Template File
+      ansible.builtin.template:
+        src : ./template-01.j2
+        dest: /tmp/template.txt

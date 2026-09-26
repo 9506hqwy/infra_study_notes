@@ -1,0 +1,9 @@
+---
+- name: wait_for 01
+  hosts: all
+
+  tasks:
+    - name: Wait for Timeout on Controller
+      ansible.builtin.wait_for:
+        timeout: 10
+      delegate_to: localhost

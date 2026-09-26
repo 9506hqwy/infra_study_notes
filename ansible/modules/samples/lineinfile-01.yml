@@ -1,0 +1,10 @@
+---
+- name: lineinfile 01
+  hosts: all
+
+  tasks:
+    - name: Insert Text Line
+      ansible.builtin.lineinfile:
+        path: /tmp/test.txt
+        line: line 1
+        insertafter: line 0

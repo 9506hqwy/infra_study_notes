@@ -68,7 +68,7 @@ rm -rf /root/.ansible/collections/ansible_collections/local/collection_01
 ## 使用
 
 ```{note}
-FQDN で指定できない？
+FQCN で指定できない？
 ```
 
 プレイレベルにコレクションのロールを使用する。

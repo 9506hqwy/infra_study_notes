@@ -43,6 +43,7 @@ typing_extensions   4.16.0
 ./plugin.md
 ./module.md
 ./var.md
+./modules/index.md
 ```
 
 ## 参考

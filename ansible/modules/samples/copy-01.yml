@@ -1,0 +1,9 @@
+---
+- name: copy 01
+  hosts: all
+
+  tasks:
+    - name: Copy File
+      ansible.builtin.copy:
+        src: ./copy-01.txt
+        dest: /tmp/copy-01.txt

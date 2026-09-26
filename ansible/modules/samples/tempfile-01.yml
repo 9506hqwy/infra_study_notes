@@ -1,0 +1,14 @@
+---
+- name: tempfile 01
+  hosts: all
+
+  tasks:
+    - name: Create Temp File
+      ansible.builtin.tempfile:
+        path : /tmp
+        state: file
+      register: result
+
+    - name: Display the result
+      ansible.builtin.debug:
+        var: result

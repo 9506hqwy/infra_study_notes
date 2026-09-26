@@ -1,0 +1,13 @@
+---
+- name: script 01
+  hosts: all
+
+  tasks:
+    - name: Execute Script
+      ansible.builtin.script:
+        cmd : ./script-01.sh
+      register: result
+
+    - name: Display the result
+      ansible.builtin.debug:
+        var: result

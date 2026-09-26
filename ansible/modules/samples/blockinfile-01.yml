@@ -1,0 +1,12 @@
+---
+- name: blockinfile 01
+  hosts: all
+
+  tasks:
+    - name: Insert Text Block
+      ansible.builtin.blockinfile:
+        path: /tmp/test.txt
+        block: |
+          line 1
+          line 2
+        insertafter: line 0
