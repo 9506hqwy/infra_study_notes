@@ -1,0 +1,13 @@
+---
+- name: Debug Task
+  hosts: all
+
+  tasks:
+    - name: Ping the Host
+      ansible.builtin.ping:
+      register:
+        result: _task.result | to_json
+
+    - name: Display Task
+      ansible.builtin.debug:
+        var: result

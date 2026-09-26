@@ -1,0 +1,24 @@
+---
+- name: Basic Variable
+  hosts: all
+  vars:
+    var1: 1
+    var2:
+      - a
+      - b
+    var3:
+      key1: 1
+      key2: 2
+
+  tasks:
+    - name: Echo Variable 1
+      ansible.builtin.shell:
+        cmd: |
+          echo {{ var1 }}
+          echo {{ var2 }}
+          echo {{ var3 }}
+      register: result
+
+    - name: Display Stdout
+      ansible.builtin.debug:
+        var: result.stdout_lines

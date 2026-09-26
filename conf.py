@@ -25,6 +25,7 @@ exclude_patterns = [
     '.vscode',
     '_build',
     'ansible/.venv',
+    'ansible/samples/collections/local',
 ]
 
 language = 'ja'

@@ -1,0 +1,26 @@
+---
+- name: Combine Variable
+  hosts: all
+  vars:
+    var1:
+      key1: 1
+    var2:
+      key2: 2
+    var3: "{{ var1 | ansible.builtin.combine(var2) }}"
+    var4:
+      - 1
+    var5:
+      - 2
+    var6: "{{ var4 + var5 }}"
+
+  tasks:
+    - name: Echo Variable 1
+      ansible.builtin.shell:
+        cmd: |
+          echo {{ var3 }}
+          echo {{ var6 }}
+      register: result
+
+    - name: Display Stdout
+      ansible.builtin.debug:
+        var: result.stdout_lines

@@ -42,6 +42,7 @@ typing_extensions   4.16.0
 ./collection.md
 ./plugin.md
 ./module.md
+./var.md
 ```
 
 ## 参考
