@@ -1,0 +1,6 @@
+def hosts():
+    return {
+        "targets":  [
+            "192.168.122.161"
+        ],
+    }

@@ -26,6 +26,7 @@ exclude_patterns = [
     '_build',
     'ansible/.venv',
     'ansible/samples/collections/local',
+    'pyinfra/.venv',
 ]
 
 language = 'ja'

@@ -8,6 +8,7 @@ numbered: 4
 ---
 
 ansible/index
+pyinfra/index
 ```
 
 ## 索引と検索
