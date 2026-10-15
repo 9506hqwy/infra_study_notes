@@ -50,6 +50,7 @@ zope.interface    8.6
 
 ```{toctree}
 ./inventory.md
+./data.md
 ```
 
 ## 参考
